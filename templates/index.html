@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f9;
+            color: #424242;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 600px;
+            background-color: #fff;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeInUp 0.8s ease-in-out;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            color: #424242;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .form-group label {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        textarea {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-bottom: 1.5rem;
+            resize: none;
+            outline: none;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+            min-height: 150px;
+        }
+        textarea:focus {
+            border-color: #48CFCB;
+        }
+        .btn-primary {
+            background-color: #48CFCB;
+            color: #fff;
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #3bb8b4;
+        }
+        .result-section {
+            margin-top: 2rem;
+            padding: 2rem;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        .alert {
+            font-size: 1.3rem;
+            margin-top: 1rem;
+        }
+        .alert-info {
+            color: #48CFCB;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="user_input">Enter text:</label>
+                <textarea class="form-control" id="user_input" name="user_input" rows="4" required>{{ user_input }}</textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Analyze Sentiment</button>
+        </form>
+
+        {% if sent %}
+        <div class="result-section">
+            <h2>Result</h2>
+            <div class="alert alert-info">
+                <strong>{{ sent[0].label }}</strong> (Score: {{ sent[0].score }})
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
