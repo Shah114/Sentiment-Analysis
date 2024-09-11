@@ -39,4 +39,11 @@ This project demonstrates a Sentiment Analysis model using the transformers libr
    ```bash
    python app.py
    ```
+<br/>
+
+## Dependencies
+* Python 3.7+
+* Flask
+* transformers (for Hugging Face sentiment analysis model)
+* Any other necessary packages listed in requirements.txt
 
