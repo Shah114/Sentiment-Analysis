@@ -27,3 +27,9 @@ This project demonstrates a Sentiment Analysis model using the transformers libr
    cd sentiment-analysis-flask
    ```
 2. Create a Virtual Environment (Optional)
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+3. Install Dependencies
+
