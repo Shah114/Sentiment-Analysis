@@ -32,4 +32,10 @@ This project demonstrates a Sentiment Analysis model using the transformers libr
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
 3. Install Dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the Flask Application
+   ```bash
+   ```
 
