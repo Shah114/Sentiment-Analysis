@@ -37,5 +37,6 @@ This project demonstrates a Sentiment Analysis model using the transformers libr
    ```
 4. Run the Flask Application
    ```bash
+   python app.py
    ```
 
