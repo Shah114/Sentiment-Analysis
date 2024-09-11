@@ -55,6 +55,11 @@ The sentiment analysis is performed using Hugging Face's pipeline from the trans
 * Output: The predicted sentiment is displayed on the webpage. <br/>
 <br/>
 
-## 
+## Future Enhancements
+* Add more complex sentiment classification models.
+* Enhance front-end UI with additional features and animations.
+* Improve error handling for invalid inputs. <br/>
+<br/>
+
 
 
