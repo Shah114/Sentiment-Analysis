@@ -17,3 +17,13 @@ This project demonstrates a Sentiment Analysis model using the transformers libr
 ├── requirements.txt       # Dependencies required for the project
 └── README.md              # This README file
 ```
+<br/>
+
+## Setup Instructions
+1. Clone the Repository
+   
+   ```bash
+   git clone https://github.com/Shah114/Sentiment-Analysis.git
+   cd sentiment-analysis-flask
+   ```
+2. Create a Virtual Environment (Optional)
