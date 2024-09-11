@@ -49,5 +49,12 @@ This project demonstrates a Sentiment Analysis model using the transformers libr
 <br/>
 
 ## How it Works
+The sentiment analysis is performed using Hugging Face's pipeline from the transformers library. The input text is classified into one of three categories: positive, negative, or neutral. <br/>
+* Input: The user provides text input through the front-end form in index.html.
+* Prediction: The text is sent to the Flask API, which processes it using the sentiment analysis pipeline.
+* Output: The predicted sentiment is displayed on the webpage. <br/>
+<br/>
+
+## 
 
 
