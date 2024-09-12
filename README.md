@@ -61,7 +61,7 @@ The sentiment analysis is performed using Hugging Face's pipeline from the trans
 * Improve error handling for invalid inputs. <br/>
 <br/>
 
-## Contrubuting
+## Contributing
 Contributions are welcome! Feel free to open an issue or submit a pull request.
 
 
